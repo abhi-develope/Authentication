@@ -5,10 +5,9 @@
   "main": "server/server.js",
   "scripts": {
     "start": "nodemon server/server.js"
-   
   },
   "keywords": [],
-   "type": "module",
+  "type": "module",
   "author": "",
   "license": "ISC",
   "dependencies": {
