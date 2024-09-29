@@ -13,6 +13,7 @@ export const signup = async  (req, res)=>{
     const userAlreadyExists = await User.findOne({email});
     if(userAlreadyExists){
        return res.status(400).json({error: "user already exist"})
+       
     }
 
     const hashPassword = await bcrypt.hash(password, 10)
@@ -44,7 +45,7 @@ export const signup = async  (req, res)=>{
     })
     
    } catch (error) {
-    res.status(400).json({message: error.message})
+    res.status(400).json({error: error.message})
    }
 }
 
