@@ -3,15 +3,19 @@ import {motion} from 'framer-motion';
 import {Mail, Lock, Loader} from "lucide-react"
 import {Link} from "react-router-dom";
 import Input from "../components/Input"
+import { useAuthStore } from '../store/authStore';
 
 const LoginPage = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
-  const isLoading = false;
+  const{isLoading, login, error} = useAuthStore();
 
-  const handelLogin = () =>{
+  
+
+  const handelLogin = async (e) =>{
     e.preventDefault();
+    await login(email, password);
   }
   return (
     <motion.div 
@@ -42,6 +46,8 @@ const LoginPage = () => {
           <div className='flex item-center mb-6'>
             <Link to='/forgot-password' className='text-sm text-red-500 hover:underline'>Forgot Password?</Link>
           </div>
+
+          {error && <p className="text-red-500 font-semibold mt-2">{error}</p>}
 
           <motion.button
           whileHover={{scale: 1.02}}
