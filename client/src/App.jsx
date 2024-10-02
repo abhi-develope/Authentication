@@ -63,7 +63,7 @@ const App = () => {
          <LoginPage/>
       </RedirectAuthenticatedUser>}/>
       <Route path='/verify-email' element={<EmailVerificationPage/>}/>
-      <Route path='/forget-password' element={<RedirectAuthenticatedUser>
+      <Route path='/forgot-password' element={<RedirectAuthenticatedUser>
         <ForgotPassword/>
       </RedirectAuthenticatedUser>}/>
     </Routes>
