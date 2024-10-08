@@ -63,6 +63,7 @@ export const sendPasswordResetEmail = async (email, resetURL) => {
             html: PASSWORD_RESET_REQUEST_TEMPLATE.replace("{resetURL}", resetURL),
             category: "password Reset",
         })
+        console.log("redirect to resetPassword", response);
     } catch (error) {
         console.error(`Error sending password reset email`, error);
 
