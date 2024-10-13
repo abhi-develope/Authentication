@@ -50,5 +50,3 @@ Check out the live demo:[ MERN Auth App](https://authentication-wahd.onrender.co
 ## License
 This project is licensed under the MIT License.
 
-
-Feel free to copy and save this content as your `README.md`. Let me know if you need further help! &#8203;:contentReference[oaicite:0]{index=0}&#8203;
