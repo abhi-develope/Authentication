@@ -3,7 +3,7 @@
 This is a full MERN stack authentication application that includes email verification via **Mailtrap** for OTP, a **Forgot Password** feature, and a welcome email functionality. The app handles secure user registration, login, email-based verification, and password recovery.
 
 ## Live Demo
-Check out the live demo: MERN Auth App
+Check out the live demo:[ MERN Auth App](https://authentication-wahd.onrender.com)
 
 ## Features
 
@@ -26,24 +26,29 @@ Check out the live demo: MERN Auth App
    ```bash
    git clone https://github.com/yourusername/mern-auth-app.git
 2. Navigate to the project directory and install dependencies:
-cd mern-auth-app
-npm install
+   ```bash
+    cd mern-auth-app
+    npm install
 
 3. Set up environment variables in a .env file:
-DB_URI=<your-mongodb-uri>
-JWT_SECRET=<your-jwt-secret>
-MAILTRAP_USER=<your-mailtrap-user>
-MAILTRAP_PASS=<your-mailtrap-pass>
+    ```bash
+    DB_URI=<your-mongodb-uri>
+    JWT_SECRET=<your-jwt-secret>
+    MAILTRAP_USER=<your-mailtrap-user>
+    MAILTRAP_PASS=<your-mailtrap-pass>
 
-4. Start the backend server:
-npm run dev
+5. Start the backend server:
+    ```bash
+     npm run dev
 
-5. Start the frontend:
-cd client
-npm start
+7. Start the frontend:
+    ```bash
+   cd client
+   npm start
 
 
-##License
+## License
 This project is licensed under the MIT License.
 
+vbnet
 Feel free to copy and save this content as your `README.md`. Let me know if you need further help! &#8203;:contentReference[oaicite:0]{index=0}&#8203;
